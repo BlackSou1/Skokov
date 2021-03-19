@@ -5,7 +5,6 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<!--FAVICONS-->
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
@@ -15,9 +14,7 @@
 	<meta name="msapplication-TileColor" content="#2b5797">
 	<meta name="msapplication-config" content="img/favicons/browserconfig.xml">
 	<meta name="theme-color" content="#000000">
-	<!--FONTS-->
 	<script src="https://kit.fontawesome.com/4c1e25a77a.js" crossorigin="anonymous"></script>
-	<!---->
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -25,14 +22,14 @@
 		<div class="page-width">
 			<div class="header__wrapper">
 				<a class="header__logo logo" href="/"><img class="header__logo-img" src="img/logo.png" alt="Logo"></a>
-				<ul class="header__nav">
-					<li class="header__nav-item"><a class="header__nav-link" href="#home">home</a></li>
-					<li class="header__nav-item"><a class="header__nav-link" href="#services">Services</a></li>
-					<li class="header__nav-item"><a class="header__nav-link" href="#about">about us</a></li>
-					<li class="header__nav-item"><a class="header__nav-link header__nav-link-news" href="news">news</a></li>
-					<li class="header__nav-item"><a class="header__nav-link" href="#contact">contact</a></li>
-				</ul>
-				<button class="header__hamburger hamburger__button"><i class="fas fa-bars"></i></button>
+				<nav class="header__nav">
+					<a class="header__nav-link" href="#home">home</a>
+					<a class="header__nav-link" href="#services">Services</a>
+					<a class="header__nav-link" href="#about">about us</a>
+					<a class="header__nav-link header__nav-link-news" href="news">news</a>
+					<a class="header__nav-link" href="#contact">contact</a>
+				</nav>
+				<button class="header__hamburger hamburger__button" aria-label="Open navigation"><i class="fas fa-bars"></i></button>
 			</div>
 		</div>
 	</header>
@@ -270,7 +267,7 @@
 		</section>
 		<section class="video">
 			<div class="page-width">
-				<a class="video__button" href="javascript:void(0)"><i class="fas fa-play"></i></a>
+				<a class="video__button" href="javascript:void(0)" aria-label="Play video"><i class="fas fa-play"></i></a>
 				<h2 class="video__title section__title2">we blend the strategic with creative</h2>
 				<p class="video__text section__text">When someone asks what we do at SKOKOV, it’s tempting to point out our four-decade track record for helping to transform the world’s great companies into sharper, smarter, better versions of themselves. </p>
 			</div>
@@ -286,7 +283,7 @@
 								<a class="news__post-img" href="post"><img src="img/news-img1.jpg" alt="Post"></a>
 								<div class="news__post-description">
 									<div class="news__post-description-wrapper1 news__post-description-wrapper">
-										<a class="news__post-link" href="post"><h3 class="news__post-title">Why financial institutions need a new IT model</h3></a>
+										<a class="news__post-title" href="post">Why financial institutions need a new IT model</a>
 										<hr class="news__post-hr primary-hr">
 										<p class="news__post-text">Why old IT models are unlikely to deliver the competitive edge that banks, insurers and wealth management firms need from technology</p>
 										<p class="news__post-date">09.03.2014</p>
@@ -296,7 +293,7 @@
 							<div class="news__post2 news__post">
 								<div class="news__post-description">
 									<div class="news__post-description-wrapper2 news__post-description-wrapper">
-										<a class="news__post-link" href="post"><h3 class="news__post-title">Reimagining IT for an omnichannel world</h3></a>
+										<a class="news__post-title" href="post">Reimagining IT for an omnichannel world</a>
 										<hr class="news__post-hr primary-hr">
 										<p class="news__post-text">The technology that powers retail is evolving rapidly. Retailers and their IT groups will have to rise to stay ahead.</p>
 										<p class="news__post-date">08.20.2014</p>
@@ -310,7 +307,7 @@
 								<a class="news__post-img3 news__post-img" href="post"><img src="img/news-img3.jpg" alt="Post"></a>
 								<div class="news__post-description3 news__post-description">
 									<div class="news__post-description-wrapper3 news__post-description-wrapper">
-										<a class="news__post-link" href="post"><h3 class="news__post-title">Making the most of generation assets in turbulent times</h3></a>
+										<a class="news__post-title" href="post">Making the most of generation assets in turbulent times</a>
 										<hr class="news__post-hr primary-hr">
 										<p class="news__post-text">A thorough review of a power generation portfolio informs decisions about how to reduce costs, raise revenues and make strategic plans.</p>
 										<p class="news__post-date">08.27.2014</p>
@@ -352,7 +349,7 @@
 						<form class="contact__right-form" action="index.html" method="post">
 							<input class="contact__right-form-input" type="text" name="name" placeholder="Name">
 							<input class="contact__right-form-input" type="email" name="email" placeholder="Email">
-							<input class="contact__right-form-input" type="text" name="subject" placeholder="Subject">
+							<input class="contact__right-form-input" type="text" placeholder="Subject">
 							<textarea class="contact__right-form-input" name="name" placeholder="Message" rows="9"></textarea>
 							<button class="contact__right-form-submit" type="submit" value="submit">Send</button>
 						</form>
@@ -376,16 +373,16 @@
 	</footer>
 	<div class="hamburger">
 		<div class="hamburger__wrapper">
-			<ul class="hamburger__nav">
-				<li class="hamburger__nav-item"><a class="hamburger__nav-link" href="#home">home</a></li>
-				<li class="hamburger__nav-item"><a class="hamburger__nav-link" href="#services">Services</a></li>
-				<li class="hamburger__nav-item"><a class="hamburger__nav-link" href="#about">about us</a></li>
-				<li class="hamburger__nav-item"><a class="hamburger__nav-link" href="news">news</a></li>
-				<li class="hamburger__nav-item"><a class="hamburger__nav-link" href="#contact">contact</a></li>
-			</ul>
+			<nav class="hamburger__nav">
+				<a class="hamburger__nav-link" href="#home">home</a>
+				<a class="hamburger__nav-link" href="#services">Services</a>
+				<a class="hamburger__nav-link" href="#about">about us</a>
+				<a class="hamburger__nav-link" href="news">news</a>
+				<a class="hamburger__nav-link" href="#contact">contact</a>
+			</nav>
 		</div>
 	</div>
-	<a class="scroll-to-top scroll-to-top--hidden" href="#header"><i class="fas fa-chevron-up"></i></a>
-	<script src="script/script.js"></script>
+	<a class="scroll-to-top scroll-to-top--hidden" href="#header" aria-label="Scroll to top"><i class="fas fa-chevron-up"></i></a>
+	<script src="js/script.js"></script>
 </body>
 </html>
