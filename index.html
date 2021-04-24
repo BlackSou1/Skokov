@@ -3,7 +3,7 @@
 <head>
 	<title>Skokov</title>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
@@ -15,13 +15,16 @@
 	<meta name="msapplication-config" content="img/favicons/browserconfig.xml">
 	<meta name="theme-color" content="#000000">
 	<script src="https://kit.fontawesome.com/4c1e25a77a.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.min.css">
+	<script src="js/bundle.min.js" defer></script>
 </head>
 <body>
 	<header class="header" id="header">
 		<div class="page-width">
 			<div class="header__wrapper">
-				<a class="header__logo logo" href="/"><img class="header__logo-img" src="img/logo.png" alt="Logo"></a>
+				<a class="header__logo logo" href="/" aria-label="Homepage">
+					<img class="header__logo-img" src="img/logo.png" alt="Logo">
+				</a>
 				<nav class="header__nav">
 					<a class="header__nav-link" href="#home">home</a>
 					<a class="header__nav-link" href="#services">Services</a>
@@ -29,7 +32,9 @@
 					<a class="header__nav-link header__nav-link-news" href="news">news</a>
 					<a class="header__nav-link" href="#contact">contact</a>
 				</nav>
-				<button class="header__hamburger hamburger__button" aria-label="Open navigation"><i class="fas fa-bars"></i></button>
+				<button class="header__hamburger hamburger__button" aria-label="Open navigation">
+					<i class="fas fa-bars"></i>
+				</button>
 			</div>
 		</div>
 	</header>
@@ -116,7 +121,7 @@
 					<div class="about__left">
 						<h3 class="about__left-title">What we do</h3>
 						<hr class="about__left-hr primary-hr">
-						<p class="about__left-text">When someone asks what we do SKOKOV, it’s tempting to point out our four-decade track record for helping to transform the world’s great companies into sharper, smarter, better versions of themselves. It’s true, our mission is to help management teams create such high levels of economic value that together we redefine our respective industries.<br>We work with top executives to help them make better decisions, convert those decisions to actions, and deliver the sustainable success they desire. For forty years, we've been passionate about achieving better results for our clients-results that go beyond financial and are uniquely tailored, pragmatic, holistic, and enduring.<br>We advise global leaders on their most critical issues and opportunities: strategy, marketing, organization, operations, technology, transformations and mergers & acquisitions, across all industries and geographies. Our unique approach to traditional change management, called Results Delivery®, helps clients measure and manage risk and overcome the odds to realize results.</p>
+						<p class="about__left-text">When someone asks what we do SKOKOV, it’s tempting to point out our four-decade track record for helping to transform the world’s great companies into sharper, smarter, better versions of themselves. It’s true, our mission is to help management teams create such high levels of economic value that together we redefine our respective industries. <br> We work with top executives to help them make better decisions, convert those decisions to actions, and deliver the sustainable success they desire. For forty years, we've been passionate about achieving better results for our clients-results that go beyond financial and are uniquely tailored, pragmatic, holistic, and enduring. <br> We advise global leaders on their most critical issues and opportunities: strategy, marketing, organization, operations, technology, transformations and mergers & acquisitions, across all industries and geographies. Our unique approach to traditional change management, called Results Delivery®, helps clients measure and manage risk and overcome the odds to realize results.</p>
 					</div>
 					<div class="about__right">
 						<h3 class="about__right-title">our clients</h3>
@@ -151,9 +156,9 @@
 								</div>
 							</div>
 							<div class="about__right-buttons">
-								<button class="about__right-button slider__button"></button>
-								<button class="about__right-button slider__button"></button>
-								<button class="about__right-button slider__button"></button>
+								<button class="about__right-button slider__button" aria-label="Switch slide"></button>
+								<button class="about__right-button slider__button" aria-label="Switch slide"></button>
+								<button class="about__right-button slider__button" aria-label="Switch slide"></button>
 							</div>
 						</div>
 					</div>
@@ -162,7 +167,9 @@
 					<h3 class="about__team-title">our team</h3>
 					<hr class="about__team-hr primary-hr">
 					<div class="about__team-members">
-						<a class="about__team-member about__team-members-item" href="javascript:void(0)"><img class="about__team-member-img" src="img/team-img1.jpg" alt="Member"></a>
+						<a class="about__team-member about__team-members-item" href="javascript:void(0)">
+							<img class="about__team-member-img" src="img/team-img1.jpg" alt="Member">
+						</a>
 						<div class="about__team-member-description about__team-members-item">
 							<h2 class="about__team-member-title">Clark Kent</h2>
 							<div class="about__team-member-bottom">
@@ -171,7 +178,9 @@
 								<p class="about__team-member-text2">Team Leader</p>
 							</div>
 						</div>
-						<a class="about__team-member about__team-members-item" href="javascript:void(0)"><img class="about__team-member-img" src="img/team-img2.jpg" alt="Member"></a>
+						<a class="about__team-member about__team-members-item" href="javascript:void(0)">
+							<img class="about__team-member-img" src="img/team-img2.jpg" alt="Member">
+						</a>
 						<div class="about__team-member-description about__team-members-item">
 							<h2 class="about__team-member-title">Lorem Ipsum</h2>
 							<div class="about__team-member-bottom">
@@ -180,7 +189,9 @@
 								<p class="about__team-member-text2">Team Leader</p>
 							</div>
 						</div>
-						<a class="about__team-member about__team-members-item" href="javascript:void(0)"><img class="about__team-member-img" src="img/team-img3.jpg" alt="Member"></a>
+						<a class="about__team-member about__team-members-item" href="javascript:void(0)">
+							<img class="about__team-member-img" src="img/team-img3.jpg" alt="Member">
+						</a>
 						<div class="about__team-member-description about__team-members-item">
 							<h2 class="about__team-member-title">Lorem Ipsum</h2>
 							<div class="about__team-member-bottom">
@@ -189,7 +200,9 @@
 								<p class="about__team-member-text2">Team Leader</p>
 							</div>
 						</div>
-						<a class="about__team-member about__team-members-item" href="javascript:void(0)"><img class="about__team-member-img" src="img/team-img4.jpg" alt="Member"></a>
+						<a class="about__team-member about__team-members-item" href="javascript:void(0)">
+							<img class="about__team-member-img" src="img/team-img4.jpg" alt="Member">
+						</a>
 						<div class="about__team-member-description about__team-members-item">
 							<h2 class="about__team-member-title">Lorem Ipsum</h2>
 							<div class="about__team-member-bottom">
@@ -198,7 +211,9 @@
 								<p class="about__team-member-text2">Team Leader</p>
 							</div>
 						</div>
-						<a class="about__team-member about__team-members-item" href="javascript:void(0)"><img class="about__team-member-img" src="img/team-img5.jpg" alt="Member"></a>
+						<a class="about__team-member about__team-members-item" href="javascript:void(0)">
+							<img class="about__team-member-img" src="img/team-img5.jpg" alt="Member">
+						</a>
 						<div class="about__team-member-description about__team-members-item">
 							<h2 class="about__team-member-title">Lorem Ipsum</h2>
 							<div class="about__team-member-bottom">
@@ -207,7 +222,9 @@
 								<p class="about__team-member-text2">Team Leader</p>
 							</div>
 						</div>
-						<a class="about__team-member about__team-members-item" href="javascript:void(0)"><img class="about__team-member-img" src="img/team-img6.jpg" alt="Member"></a>
+						<a class="about__team-member about__team-members-item" href="javascript:void(0)">
+							<img class="about__team-member-img" src="img/team-img6.jpg" alt="Member">
+						</a>
 						<div class="about__team-member-description about__team-members-item">
 							<h2 class="about__team-member-title">Lorem Ipsum</h2>
 							<div class="about__team-member-bottom">
@@ -216,7 +233,9 @@
 								<p class="about__team-member-text2">Team Leader</p>
 							</div>
 						</div>
-						<a class="about__team-member about__team-members-item" href="javascript:void(0)"><img class="about__team-member-img" src="img/team-img7.jpg" alt="Member"></a>
+						<a class="about__team-member about__team-members-item" href="javascript:void(0)">
+							<img class="about__team-member-img" src="img/team-img7.jpg" alt="Member">
+						</a>
 						<div class="about__team-member-description about__team-members-item">
 							<h2 class="about__team-member-title">Lorem Ipsum</h2>
 							<div class="about__team-member-bottom">
@@ -225,7 +244,9 @@
 								<p class="about__team-member-text2">Team Leader</p>
 							</div>
 						</div>
-						<a class="about__team-member about__team-members-item" href="javascript:void(0)"><img class="about__team-member-img" src="img/team-img8.jpg" alt="Member"></a>
+						<a class="about__team-member about__team-members-item" href="javascript:void(0)">
+							<img class="about__team-member-img" src="img/team-img8.jpg" alt="Member">
+						</a>
 						<div class="about__team-member-description about__team-members-item">
 							<h2 class="about__team-member-title">Lorem Ipsum</h2>
 							<div class="about__team-member-bottom">
@@ -234,7 +255,9 @@
 								<p class="about__team-member-text2">Team Leader</p>
 							</div>
 						</div>
-						<a class="about__team-member about__team-members-item" href="javascript:void(0)"><img class="about__team-member-img" src="img/team-img9.jpg" alt="Member"></a>
+						<a class="about__team-member about__team-members-item" href="javascript:void(0)">
+							<img class="about__team-member-img" src="img/team-img9.jpg" alt="Member">
+						</a>
 						<div class="about__team-member-description about__team-members-item">
 							<h2 class="about__team-member-title">Lorem Ipsum</h2>
 							<div class="about__team-member-bottom">
@@ -243,7 +266,9 @@
 								<p class="about__team-member-text2">Team Leader</p>
 							</div>
 						</div>
-						<a class="about__team-member about__team-members-item" href="javascript:void(0)"><img class="about__team-member-img" src="img/team-img10.jpg" alt="Member"></a>
+						<a class="about__team-member about__team-members-item" href="javascript:void(0)">
+							<img class="about__team-member-img" src="img/team-img10.jpg" alt="Member">
+						</a>
 						<div class="about__team-member-description about__team-members-item">
 							<h2 class="about__team-member-title">Lorem Ipsum</h2>
 							<div class="about__team-member-bottom">
@@ -252,7 +277,9 @@
 								<p class="about__team-member-text2">Team Leader</p>
 							</div>
 						</div>
-						<a class="about__team-member about__team-members-item" href="javascript:void(0)"><img class="about__team-member-img" src="img/team-img11.jpg" alt="Member"></a>
+						<a class="about__team-member about__team-members-item" href="javascript:void(0)">
+							<img class="about__team-member-img" src="img/team-img11.jpg" alt="Member">
+						</a>
 						<div class="about__team-member-description about__team-members-item">
 							<h2 class="about__team-member-title">Lorem Ipsum</h2>
 							<div class="about__team-member-bottom">
@@ -267,7 +294,9 @@
 		</section>
 		<section class="video">
 			<div class="page-width">
-				<a class="video__button" href="javascript:void(0)" aria-label="Play video"><i class="fas fa-play"></i></a>
+				<a class="video__button" href="javascript:void(0)" aria-label="Play video">
+					<i class="fas fa-play"></i>
+				</a>
 				<h2 class="video__title section__title2">we blend the strategic with creative</h2>
 				<p class="video__text section__text">When someone asks what we do at SKOKOV, it’s tempting to point out our four-decade track record for helping to transform the world’s great companies into sharper, smarter, better versions of themselves. </p>
 			</div>
@@ -280,7 +309,9 @@
 					<div class="news__posts">
 						<div class="news__column1">
 							<div class="news__post1 news__post">
-								<a class="news__post-img" href="post"><img src="img/news-img1.jpg" alt="Post"></a>
+								<a class="news__post-img" href="post">
+									<img src="img/news-img1.jpg" alt="Post">
+								</a>
 								<div class="news__post-description">
 									<div class="news__post-description-wrapper1 news__post-description-wrapper">
 										<a class="news__post-title" href="post">Why financial institutions need a new IT model</a>
@@ -299,12 +330,16 @@
 										<p class="news__post-date">08.20.2014</p>
 									</div>
 								</div>
-								<a class="news__post-img" href="post"><img src="img/news-img2.jpg" alt="Post"></a>
+								<a class="news__post-img" href="post">
+									<img src="img/news-img2.jpg" alt="Post">
+								</a>
 							</div>
 						</div>
 						<div class="news__column2">
 							<div class="news__post3 news__post">
-								<a class="news__post-img3 news__post-img" href="post"><img src="img/news-img3.jpg" alt="Post"></a>
+								<a class="news__post-img3 news__post-img" href="post">
+									<img src="img/news-img3.jpg" alt="Post">
+								</a>
 								<div class="news__post-description3 news__post-description">
 									<div class="news__post-description-wrapper3 news__post-description-wrapper">
 										<a class="news__post-title" href="post">Making the most of generation assets in turbulent times</a>
@@ -346,7 +381,7 @@
 						<h3 class="contact__right-title">contact</h3>
 						<hr class="contact__right-hr primary-hr">
 						<p class="contact__right-text">Please contact us using contact form below.</p>
-						<form class="contact__right-form" action="index.html" method="post">
+						<form class="contact__right-form" action="#" method="post">
 							<input class="contact__right-form-input" type="text" name="name" placeholder="Name">
 							<input class="contact__right-form-input" type="email" name="email" placeholder="Email">
 							<input class="contact__right-form-input" type="text" placeholder="Subject">
@@ -363,10 +398,18 @@
 			<div class="footer__wrapper">
 				<p class="footer__text">© 2014 SKOKOV - all rights reserved</p>
 				<div class="footer__social">
-					<a class="footer__social-item" href="https://www.linkedin.com" target="_blank"><img class="footer__social-img" src="img/footer-social1.png" alt=""></a>
-					<a class="footer__social-item" href="https://www.facebook.com" target="_blank"><img class="footer__social-img" src="img/footer-social2.png" alt=""></a>
-					<a class="footer__social-item" href="https://twitter.com" target="_blank"><img class="footer__social-img" src="img/footer-social3.png" alt=""></a>
-					<a class="footer__social-item" href="https://www.youtube.com" target="_blank"><img class="footer__social-img" src="img/footer-social4.png" alt=""></a>
+					<a class="footer__social-item" href="https://www.linkedin.com" target="_blank">
+						<img class="footer__social-img" src="img/footer-social1.png" alt="">
+					</a>
+					<a class="footer__social-item" href="https://www.facebook.com" target="_blank">
+						<img class="footer__social-img" src="img/footer-social2.png" alt="">
+					</a>
+					<a class="footer__social-item" href="https://twitter.com" target="_blank">
+						<img class="footer__social-img" src="img/footer-social3.png" alt="">
+					</a>
+					<a class="footer__social-item" href="https://www.youtube.com" target="_blank">
+						<img class="footer__social-img" src="img/footer-social4.png" alt="">
+					</a>
 				</div>
 			</div>
 		</div>
@@ -382,7 +425,8 @@
 			</nav>
 		</div>
 	</div>
-	<a class="scroll-to-top scroll-to-top--hidden" href="#header" aria-label="Scroll to top"><i class="fas fa-chevron-up"></i></a>
-	<script src="js/script.js"></script>
+	<a class="scroll-to-top scroll-to-top--hidden" href="#header" aria-label="Scroll to top">
+		<i class="fas fa-chevron-up"></i>
+	</a>
 </body>
 </html>

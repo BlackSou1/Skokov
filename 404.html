@@ -3,7 +3,7 @@
 <head>
 	<title>404 Not Found</title>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
@@ -15,13 +15,16 @@
 	<meta name="msapplication-config" content="img/favicons/browserconfig.xml">
 	<meta name="theme-color" content="#000000">
 	<script src="https://kit.fontawesome.com/4c1e25a77a.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.min.css">
+	<script src="js/bundle.min.js" defer></script>
 </head>
 <body>
 	<header class="header" id="header">
 		<div class="page-width">
 			<div class="header__wrapper">
-				<a class="header__logo logo" href="/"><img class="header__logo-img" src="img/logo.png" alt="Logo"></a>
+				<a class="header__logo logo" href="/" aria-label="Homepage">
+					<img class="header__logo-img" src="img/logo.png" alt="Logo">
+				</a>
 				<nav class="header__nav">
 					<a class="header__nav-link" href="#home">home</a>
 					<a class="header__nav-link" href="#services">Services</a>
@@ -29,14 +32,17 @@
 					<a class="header__nav-link header__nav-link-news" href="news">news</a>
 					<a class="header__nav-link" href="#contact">contact</a>
 				</nav>
-				<button class="header__hamburger hamburger__button" aria-label="Open navigation"><i class="fas fa-bars"></i></button>
+				<button class="header__hamburger hamburger__button" aria-label="Open navigation">
+					<i class="fas fa-bars"></i>
+				</button>
 			</div>
 		</div>
 	</header>
 	<section class="error-404">
 		<div class="page-width">
-			<div class="error-404__article">
-				<h2 class="error-404__title"><span class="error-404__number">404</span><br>Not Found</h2>
+			<div class="error-404__wrapper">
+				<p class="error-404__number">404</p>
+				<h2 class="error-404__title">Not Found</h2>
 				<p class="error-404__text">The requested page was not found on our server. It doesn't exist or it may have been removed.</p>
 			</div>
 		</div>
@@ -46,10 +52,18 @@
 			<div class="footer__wrapper">
 				<p class="footer__text">© 2014 SKOKOV - all rights reserved</p>
 				<div class="footer__social">
-					<a class="footer__social-item" href="https://www.linkedin.com" target="_blank"><img class="footer__social-img" src="img/footer-social1.png" alt=""></a>
-					<a class="footer__social-item" href="https://www.facebook.com" target="_blank"><img class="footer__social-img" src="img/footer-social2.png" alt=""></a>
-					<a class="footer__social-item" href="https://twitter.com" target="_blank"><img class="footer__social-img" src="img/footer-social3.png" alt=""></a>
-					<a class="footer__social-item" href="https://www.youtube.com" target="_blank"><img class="footer__social-img" src="img/footer-social4.png" alt=""></a>
+					<a class="footer__social-item" href="https://www.linkedin.com" target="_blank">
+						<img class="footer__social-img" src="img/footer-social1.png" alt="">
+					</a>
+					<a class="footer__social-item" href="https://www.facebook.com" target="_blank">
+						<img class="footer__social-img" src="img/footer-social2.png" alt="">
+					</a>
+					<a class="footer__social-item" href="https://twitter.com" target="_blank">
+						<img class="footer__social-img" src="img/footer-social3.png" alt="">
+					</a>
+					<a class="footer__social-item" href="https://www.youtube.com" target="_blank">
+						<img class="footer__social-img" src="img/footer-social4.png" alt="">
+					</a>
 				</div>
 			</div>
 		</div>
@@ -65,7 +79,8 @@
 			</nav>
 		</div>
 	</div>
-	<a class="scroll-to-top scroll-to-top--hidden" href="#header" aria-label="Scroll to top"><i class="fas fa-chevron-up"></i></a>
-	<script src="js/script.js"></script>
+	<a class="scroll-to-top scroll-to-top--hidden" href="#header" aria-label="Scroll to top">
+		<i class="fas fa-chevron-up"></i>
+	</a>
 </body>
 </html>
